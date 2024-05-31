@@ -11,5 +11,8 @@ Servo servo2;
 LiquidCrystal_I2C lcd_1(0x27, 16, 2);
 
 void setup() {
-    
+  Serial.begin(9600);
+  lcd_1.backlight();
+  servo1.attach(pinservo1);
+  servo2.attach(pinservo2);
 }
