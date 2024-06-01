@@ -38,7 +38,11 @@ void loop(){
 
       servo1.write(angulo1);
       servo2.write(angulo2);
-      
+
+      lcd_1.setCursor(10,0);
+      lcd_1.print(angulo1);
+      lcd_1.setCursor(10,1);
+      lcd_1.print(angulo2);
     }
     }
 }
