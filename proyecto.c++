@@ -35,6 +35,9 @@ void loop(){
 
       int angulo1 = map(poten1, 0, 1023, 0, 180);
       int angulo2 = map(poten2, 0, 1023, 0, 180);
+
+      servo1.write(angulo1);
+      servo2.write(angulo2);
       
     }
     }
