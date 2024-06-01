@@ -26,6 +26,9 @@ void loop(){
     if (Serial.available() > 0) {
     String data = Serial.readStringUntil('\n');
     int commaIndex = data.indexOf(',');
-    if (commaIndex > 0) {}
+    if (commaIndex > 0) {
+      String poten1Str = data.substring(0, commaIndex);
+      String poten2Str = data.substring(commaIndex + 1);
+    }
     }
 }
