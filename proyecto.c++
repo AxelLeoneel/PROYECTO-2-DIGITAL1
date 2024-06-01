@@ -15,4 +15,9 @@ void setup() {
   lcd_1.backlight();
   servo1.attach(pinservo1);
   servo2.attach(pinservo2);
+  lcd_1.begin(16, 2);
+  lcd_1.setCursor(0, 0);
+  lcd_1.print("Servo 1: ");
+  lcd_1.setCursor(0, 1);
+  lcd_1.print("Servo 2: ");
 }
