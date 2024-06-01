@@ -29,6 +29,9 @@ void loop(){
     if (commaIndex > 0) {
       String poten1Str = data.substring(0, commaIndex);
       String poten2Str = data.substring(commaIndex + 1);
+
+      int poten1 = poten1Str.toInt();
+      int poten2 = poten2Str.toInt();
     }
     }
 }
