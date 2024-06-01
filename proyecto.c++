@@ -21,3 +21,9 @@ void setup() {
   lcd_1.setCursor(0, 1);
   lcd_1.print("Servo 2: ");
 }
+
+void loop(){
+    if (Serial.available() > 0) {
+    String data = Serial.readStringUntil('\n');
+    }
+}
